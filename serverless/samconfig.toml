@@ -1,0 +1,12 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "sam-manual-stack"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-15ei1ggs9torg"
+s3_prefix = "sam-manual-stack"
+region = "us-east-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+parameter_overrides = "AppName=\"shop-http-api-manual\" StageName=\"prod\""
+image_repositories = []
